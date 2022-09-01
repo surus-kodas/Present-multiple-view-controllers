@@ -44,7 +44,7 @@ class ChildViewController: UIViewController {
     
     @objc func buttonAction(_ sender: UIButton) {
         print("Button tapped in \(self)")
-        parentViewControler.dismiss(animated: true) {
+        parentViewControler.homeViewControler.dismiss(animated: true) {
             print("dismissed \(self)")
         }
     }
