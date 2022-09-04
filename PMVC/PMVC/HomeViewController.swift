@@ -30,9 +30,10 @@ class HomeViewController: UIViewController {
     
     @objc func buttonAction(_ sender: UIButton) {
         print("Button tapped in \(self)")
-        let parentViewController = ParentViewController(homeViewControler: self)
+        let viewController = ParentViewController(homeViewControler: self)
+        viewController.modalPresentationStyle = .overFullScreen
         
-        self.present(parentViewController, animated: true)
+        self.present(viewController, animated: true)
     }
 }
 

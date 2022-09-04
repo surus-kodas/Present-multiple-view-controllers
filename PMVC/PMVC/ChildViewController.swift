@@ -6,7 +6,7 @@ class ChildViewController: UIViewController {
     let button: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Dismiss all", for: .normal)
+        button.setTitle("Present toy", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
         return button
@@ -29,7 +29,7 @@ class ChildViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .brown
         setupViews()
     }
 
@@ -44,9 +44,10 @@ class ChildViewController: UIViewController {
     
     @objc func buttonAction(_ sender: UIButton) {
         print("Button tapped in \(self)")
-        parentViewControler.homeViewControler.dismiss(animated: true) {
-            print("dismissed \(self)")
-        }
+        
+        let viewController = ToyViewController(childViewController: self)
+        viewController.modalPresentationStyle = .overFullScreen
+        self.present(viewController, animated: true)
     }
 }
 

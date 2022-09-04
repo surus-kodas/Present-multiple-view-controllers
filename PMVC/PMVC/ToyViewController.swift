@@ -1,19 +1,19 @@
 import UIKit
 
-class ParentViewController: UIViewController {
-    var homeViewControler: HomeViewController
+class ToyViewController: UIViewController {
+    var childViewController: ChildViewController
     
     let button: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Present child", for: .normal)
+        button.setTitle("Dismiss all", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
         return button
     }()
     
-    init(homeViewControler: HomeViewController) {
-        self.homeViewControler = homeViewControler
+    init(childViewController: ChildViewController) {
+        self.childViewController = childViewController
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -29,7 +29,7 @@ class ParentViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        view.backgroundColor = .red
+        view.backgroundColor = .darkGray
         setupViews()
     }
 
@@ -44,9 +44,11 @@ class ParentViewController: UIViewController {
     
     @objc func buttonAction(_ sender: UIButton) {
         print("Button tapped in \(self)")
-        let viewController = ChildViewController(parentViewController: self)
-        viewController.modalPresentationStyle = .overFullScreen
-        self.present(viewController, animated: true)
+        print("homeViewControler: ", childViewController.parentViewControler.homeViewControler)
+        
+        childViewController.parentViewControler.homeViewControler.dismiss(animated: true) {
+            print("dismissed \(self)")
+        }
     }
 }
 

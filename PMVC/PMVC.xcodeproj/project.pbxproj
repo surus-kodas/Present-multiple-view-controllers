@@ -14,6 +14,7 @@
 		6DD914EA28C11CA0009759E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD914E828C11CA0009759E5 /* LaunchScreen.storyboard */; };
 		6DD914F328C12B2D009759E5 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD914F128C12B2D009759E5 /* ChildViewController.swift */; };
 		6DD914F428C12B2D009759E5 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD914F228C12B2D009759E5 /* ParentViewController.swift */; };
+		6DD914F628C1C37A009759E5 /* ToyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD914F528C1C37A009759E5 /* ToyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6DD914EB28C11CA0009759E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DD914F128C12B2D009759E5 /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		6DD914F228C12B2D009759E5 /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		6DD914F528C1C37A009759E5 /* ToyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6DD914E128C11C9C009759E5 /* HomeViewController.swift */,
 				6DD914F228C12B2D009759E5 /* ParentViewController.swift */,
 				6DD914F128C12B2D009759E5 /* ChildViewController.swift */,
+				6DD914F528C1C37A009759E5 /* ToyViewController.swift */,
 				6DD914E628C11CA0009759E5 /* Assets.xcassets */,
 				6DD914E828C11CA0009759E5 /* LaunchScreen.storyboard */,
 				6DD914EB28C11CA0009759E5 /* Info.plist */,
@@ -145,6 +148,7 @@
 				6DD914DE28C11C9C009759E5 /* AppDelegate.swift in Sources */,
 				6DD914E028C11C9C009759E5 /* SceneDelegate.swift in Sources */,
 				6DD914F328C12B2D009759E5 /* ChildViewController.swift in Sources */,
+				6DD914F628C1C37A009759E5 /* ToyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
